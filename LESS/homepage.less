@@ -1,80 +1,274 @@
 
+//-----------------TOP INTRO SECTION -------------------------------
+//__________________________________________________________________
+
+@media @desktop {
+    .banner {
+    position:relative;
+    background-image: url("../img/chains.jpeg");
+    width: 100%;
+
+        .banner h1 {
+            width: 100%;
+        }
+
+    
+}
+}
+
 .topInfo {
-    padding: 20px;
-    padding: 50px 0 100px 20px;
-    background: rgb(87, 87, 121);
+    padding: 5rem 0 10rem 2rem;
     color: white;
     width: 100%;
+    background: rgb(87, 87, 121);
+
+    h1 {
+        border-bottom: 2px solid white;
+        width: 95%;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+
+    p {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+            width: 20rem;
+            height: 5rem;
+            background: rgb(87, 87, 121);
+            border: .2rem solid white;
+            color: white;
+            font-size: 1.6rem;
+            transition: 500ms ease;
+    }
+
+    @media @desktop {
+        background: rgb(87, 87, 121);
+        opacity: .8;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20rem 10rem 20rem 20rem;
+        text-align: center;
+
+        .topInfo h1 {
+            font-size: 6rem;
+        }
+
+        button {
+            width: 20rem;
+            height: 5rem;
+            background: rgb(87, 87, 121);
+            border: .5rem solid white;
+            color: white;
+            font-size: 2rem;
+            transition: 500ms ease;
+        }
+
+        button:hover {
+            font-size: 1.8rem;
+            transition: 500ms ease;
+        }   
+
+    }
 }
 
-.topInfo h1 {
-    border-bottom: 2px solid white;
-    width: 95%;
-    padding: 20px;
-}
-
-.topInfo p {
-    width: 95%;
-    padding: 10px;
-}
+//------------------ MIDDLE BOX CONTENT ----------------------------
+//__________________________________________________________________
 
 .middleContent {
     display: flex;
     flex-direction: column;
     justify-content:center;
     color: white;
+
+    @media @desktop {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .box {
-    padding: 100px 0 100px 20px;
+    padding: 10rem 0 10rem 2rem;
+    max-width: 100%;
+
+    @media @desktop {
+        padding: 20rem 0 20rem 4rem;
+        color: black;
+    }
 }
 
 .box h2 {
-    border-bottom: 2px solid white;
+    border-bottom: .2rem solid white;
     width: 60%;
-    padding: 10px; 
+    padding: 1rem; 
+
+    @media @desktop {
+        border-bottom: .2rem solid black;
+    }
 }
 
 .box p {
     width: 60%;
-    padding: 10px; 
+    padding: 1rem; 
 }
 
 .lastSection {
     color: white;
     background: rgb(87, 87, 121);
-    padding: 100px 0 100px 20px;
+    padding: 5rem 0 10rem 2rem;
+
+     h2 {
+        border-bottom: 2px solid white;
+        width: 95%;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+
+    p {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+            
+        width: 20rem;
+        height: 5rem;
+        background: rgb(87, 87, 121);
+        border: .2rem solid white;
+        color: white;
+    }
+
+    @media @desktop {
+        padding: 5rem 5rem 10rem 10rem;
+        color: black;
+
+        h2 {
+            font-size: 6rem;
+            border-bottom: 2px solid black;
+        }
+
+        button {
+            font-size: 2rem;
+            width: 20rem;
+            height: 5rem;
+            background: rgb(87, 87, 121);
+            border: .5rem solid black;
+            color: black;
+        }
+
+    }
+
 }
 
-button {
-    width: 20rem;
-    height: 4rem;
-    background: rgb(87, 87, 121);
-    border: 2px solid white;
-    color: white;
-    font-size: 18px;
+@media @desktop {
+    .one {
+        width: 45%;
+    }
+
+    .two {
+        width: 55%;
+    }
+
+    .three {
+        width: 55%;
+    }
+
+    .four {
+        width: 45%;
+    }
+
+    .five {
+        width: 45%;
+    }
+
+    .six {
+        width: 55%;
+    }
 }
+
+
+
+
+
+
+//--------------------BOX COLORS-------------------------------
+//---------------------------------------------------------------
+
 
 .one {
-    background:#9bf1ff;
+    background-color: #6fc3df;
+    transition: 1s;
+   // background: rgb(87, 87, 121);
+
+}
+
+.one:hover {
+    opacity: .8;
+    transition: 1s;
 }
 
 .two {
-    background: #8d82c4;;
+    background-color: #8d82c4;
+    transition: 1s;
+}
+
+.two:hover {
+    opacity: .8;
+    transition: 1s;
 }
 
 .three {
-    background: rgb(122, 212, 122);
+    background-color: #ec8d81;
+    transition: 1s;
+}
+
+.three:hover {
+    opacity: .8;
+    transition: 1s;
 }
 
 .four {
-    background: rgb(230, 189, 114);
+    background-color: #e7b788;;
+    transition: 1s;
+}
+
+.four:hover {
+    opacity: .8;
+    transition: 1s;
 }
 
 .five {
-    background: rgb(112, 199, 199);
+    transition: 1s;
+    background-color: #8ea9e8;
 }
 
-.six {
-    background: rgb(196, 192, 192);
+
+.five:hover {
+    opacity: .8;
+    transition: 1s;
 }
+
+
+.six {
+    transition: 1s;
+    background-color: #87c5a4;
+}
+
+.six:hover {
+    opacity: .8;
+    transition: 1s;
+}
+
+// ------------ BUTTONS HERE --------------------------
+
+// button {
+//     width: 20rem;
+//     height: 4rem;
+//     background: rgb(87, 87, 121);
+//     border: .2rem solid white;
+//     color: white;
+//     font-size: 1.8rem;
+// }
