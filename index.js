@@ -1,4 +1,6 @@
 
+
+//Menu functionality
 function toggleMenu(){
     menu.classList.toggle('nav--open');
   }
@@ -17,3 +19,19 @@ escape.addEventListener("click", e => {
     toggleMenu();
     header.style.display = "block";
 })
+
+// -------------------------------------------------------------------
+
+const allBoxes = document.querySelectorAll(".box");
+
+allBoxes[0].addEventListener("dblclick", e => {
+    
+
+    
+    setTimeout (function(){
+     
+
+
+    },1000)
+
+},false);

@@ -1,3 +1,20 @@
+@keyframes pulse {
+  0% {
+    transform: skew(0deg, 0deg) translate(0, 0);
+  }
+  25% {
+    transform: skew(5deg, 5deg) translate(0, 1rem);
+  }
+  50% {
+    transform: skew(-5deg, -5deg) translate(0, 0);
+  }
+  75% {
+    transform: skew(5deg, 5deg) translate(0, 1rem);
+  }
+  100% {
+    transform: skew(0deg, 0deg) translate(0, 0);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -262,13 +279,20 @@ header a button:hover {
   background: none;
 }
 footer {
-  padding: 20px;
+  padding: 2rem;
   background: #575779;
+}
+@media (min-width: 800px ) {
+  footer {
+    padding-left: 20rem;
+  }
 }
 @media (min-width: 800px ) {
   .banner {
     position: relative;
-    background-image: url("../img/chains.jpeg");
+    background-image: url("../img/background.jpeg");
+    background-size: cover;
+    background-position: bottom;
     width: 100%;
   }
   .banner .banner h1 {
@@ -302,7 +326,7 @@ footer {
 @media (min-width: 800px ) {
   .topInfo {
     background: #575779;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -343,11 +367,13 @@ footer {
 .box {
   padding: 10rem 0 10rem 2rem;
   max-width: 100%;
+  border-top: 0.1rem solid black;
 }
 @media (min-width: 800px ) {
   .box {
     padding: 20rem 0 20rem 4rem;
-    color: black;
+    color: white;
+    border-top: transparent;
   }
 }
 .box h2 {
@@ -357,26 +383,38 @@ footer {
 }
 @media (min-width: 800px ) {
   .box h2 {
-    border-bottom: 0.2rem solid black;
+    border-bottom: 0.2rem solid white;
   }
 }
 .box p {
   width: 60%;
   padding: 1rem;
 }
+@media (min-width: 800px ) {
+  .bannerTwo {
+    position: relative;
+    background-image: url("../img/beach.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+  }
+  .bannerTwo .banner h1 {
+    width: 100%;
+  }
+}
 .lastSection {
   color: white;
-  background: #575779;
+  background: #303041;
   padding: 5rem 0 10rem 2rem;
 }
 .lastSection h2 {
-  border-bottom: 2px solid white;
+  border-bottom: 0.2rem solid white;
   width: 95%;
   padding: 5rem 2rem 2rem 2rem;
 }
 .lastSection p {
   width: 95%;
-  padding: 10px;
+  padding: 1rem;
 }
 .lastSection button {
   width: 20rem;
@@ -387,20 +425,23 @@ footer {
 }
 @media (min-width: 800px ) {
   .lastSection {
-    padding: 5rem 5rem 10rem 10rem;
-    color: black;
+    border-top: 5px solid black;
+    padding: 15rem 5rem 15rem 20rem;
+    color: white;
+    opacity: 0.9;
   }
   .lastSection h2 {
     font-size: 6rem;
-    border-bottom: 2px solid black;
+    border-bottom: 0.2rem solid white;
   }
   .lastSection button {
     font-size: 2rem;
     width: 20rem;
     height: 5rem;
     background: #575779;
-    border: 0.5rem solid black;
-    color: black;
+    border: 0.5rem solid white;
+    color: white;
+    transition: 3s;
   }
 }
 @media (min-width: 800px ) {
@@ -424,50 +465,78 @@ footer {
   }
 }
 .one {
-  background-color: #6fc3df;
+  background-color: #557A95;
   transition: 1s;
+}
+@media (min-width: 800px ) {
+  .one {
+    border-right: 0.1rem solid black;
+  }
+}
+.two {
+  background-color: #557A95;
+  transition: 1s;
+}
+.three {
+  transition: 1s;
+  background: #5D5C61;
+}
+@media (min-width: 800px ) {
+  .three {
+    border-top: 0.5rem solid black;
+    border-bottom: 0.5rem solid black;
+    border-right: 0.1rem solid black;
+  }
+}
+.four {
+  transition: 1s;
+  background: #5D5C61;
+}
+@media (min-width: 800px ) {
+  .four {
+    border-top: 0.5rem solid black;
+    border-bottom: 0.5rem solid black;
+  }
+}
+.five {
+  transition: 1s;
+  background: #64485C;
+}
+@media (min-width: 800px ) {
+  .five {
+    border-right: 0.1rem solid black;
+  }
+}
+.six {
+  transition: 1s;
+  background: #64485C;
 }
 .one:hover {
   opacity: 0.8;
-  transition: 1s;
-}
-.two {
-  background-color: #8d82c4;
   transition: 1s;
 }
 .two:hover {
   opacity: 0.8;
   transition: 1s;
 }
-.three {
-  background-color: #ec8d81;
-  transition: 1s;
-}
 .three:hover {
   opacity: 0.8;
-  transition: 1s;
-}
-.four {
-  background-color: #e7b788;
   transition: 1s;
 }
 .four:hover {
   opacity: 0.8;
   transition: 1s;
 }
-.five {
-  transition: 1s;
-  background-color: #8ea9e8;
-}
 .five:hover {
   opacity: 0.8;
   transition: 1s;
 }
-.six {
-  transition: 1s;
-  background-color: #87c5a4;
-}
 .six:hover {
   opacity: 0.8;
   transition: 1s;
+}
+.lastSection button:hover {
+  animation: pulse 5s linear infinite;
+  transition: 1.5s;
+  background-color: #2a2a33;
 }
