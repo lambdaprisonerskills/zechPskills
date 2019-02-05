@@ -21,17 +21,3 @@ escape.addEventListener("click", e => {
 })
 
 // -------------------------------------------------------------------
-
-const allBoxes = document.querySelectorAll(".box");
-
-allBoxes[0].addEventListener("dblclick", e => {
-    
-
-    
-    setTimeout (function(){
-     
-
-
-    },1000)
-
-},false);

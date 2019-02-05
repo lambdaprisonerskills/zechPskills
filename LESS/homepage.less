@@ -15,6 +15,10 @@
     }
 }
 
+button {
+    cursor: cell;
+}
+
 .topInfo {
     padding: 5rem 0 10rem 2rem;
     color: white;
@@ -57,8 +61,9 @@
         }
 
         button {
-            width: 20rem;
-            height: 5rem;
+            margin-top: 3rem;
+            width: 24rem;
+            height: 9rem;
             background: rgb(87, 87, 121);
             border: .5rem solid white;
             color: white;
@@ -67,8 +72,7 @@
         }
 
         button:hover {
-            font-size: 1.8rem;
-            transition: 500ms ease;
+            animation: pulse 5s linear infinite;
         }
 
     }
@@ -124,13 +128,14 @@
         position: relative;
         background-image: url("../img/beach.jpeg");
         background-position: bottom;
-        background-size: cover;
+        background-size:cover;
         width: 100%;
 
         .banner h1 {
             width: 100%;
         }
-    }
+
+}
 }
 
 .lastSection {
@@ -160,9 +165,9 @@
 
     @media @desktop {
         border-top: 5px solid black;
-        padding: 15rem 5rem 15rem 20rem;
+        padding: 20rem 5rem 15rem 20rem;
         color: white;
-        opacity: .9;
+        opacity: .96;
 
         h2 {
             font-size: 6rem;
@@ -170,14 +175,15 @@
         }
 
         button {
-            font-size: 2rem;
-            width: 20rem;
-            height: 5rem;
+            font-size: 2.4rem;
+            width: 24rem;
+            height: 9rem;
             background: rgb(87, 87, 121);
             border: .5rem solid white;
             color: white;
             transition: 3s;
         }
+
 
     }
 
@@ -318,7 +324,7 @@
 }
 
 .lastSection button:hover {
-    animation: pulse 5s linear infinite;
+    animation: wobble 5s linear infinite; // <-------------------------------- animation WOBBLE
     transition: 1.5s;
     background-color: rgb(42, 42, 51);
 }
