@@ -20,6 +20,7 @@ button {
 }
 
 .topInfo {
+    text-shadow: 0 0 1rem black;
     padding: 5rem 0 10rem 2rem;
     color: white;
     width: 100%;
@@ -52,9 +53,8 @@ button {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 20rem 20rem 20rem 30rem;
-        text-align: center;
+        justify-content: flex-start;
+        padding: 20rem 10rem 20rem 10rem;   
 
         .topInfo h1 {
             font-size: 6rem;
@@ -73,6 +73,7 @@ button {
 
         button:hover {
             animation: pulse 5s linear infinite;
+            box-shadow: 0 0 10rem rgb(56, 4, 56);   
         }
 
     }
@@ -82,6 +83,7 @@ button {
 //__________________________________________________________________
 
 .middleContent {
+    text-shadow: 0 0 1rem black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,15 +106,19 @@ button {
     border-top: .1rem solid black;
 
     @media @desktop {
-        padding: 20rem 0 20rem 12rem;
+        padding: 15rem 0 15rem 3rem;
         color: white;
         border-top: transparent;
     }
 }
 
+.box:hover {
+    box-shadow: 0 0 20px black;
+}
+
 .box h2 {
     border-bottom: .2rem solid white;
-    width: 60%;
+    width: 95%;
     padding: 1rem;
 
     @media @desktop {
@@ -121,8 +127,18 @@ button {
 }
 
 .box p {
-    width: 90%;
+    width: 95%;
     padding: 1rem;
+}
+
+
+
+.four a, .five a {
+    color: white;
+}
+
+.four a:hover, .five a:hover {
+    color: blue;
 }
 
 // ----------------------------BOTTOM SECTION OF PAGE ------------------------------------------------
@@ -136,14 +152,16 @@ button {
 }
 }
 
+
 .lastSection {
     color: white;
     background: rgb(48, 48, 65);
     padding: 5rem 0 10rem 2rem;
+    text-shadow: 0 0 1rem black;
 
     h2 {
         border-bottom: .2rem solid white;
-        width: 50%;
+        width: 95%;
         padding: 5rem 2rem 2rem 2rem;
     }
 
@@ -153,13 +171,21 @@ button {
     }
 
     button {
-
         width: 20rem;
         height: 5rem;
         background: rgb(87, 87, 121);
         border: .2rem solid white;
         color: white;
+        margin-left: .4rem;
     }
+
+    button:hover {
+        animation: wobble 5s linear infinite; // <-------------------------------- animation WOBBLE
+        transition: 1.5s;
+        background-color: rgb(42, 42, 51);
+        box-shadow: 0 0 10rem black;
+    }
+    
 
     @media @desktop {
         border-top: 5px solid black;
@@ -355,12 +381,4 @@ button {
         opacity: .8;
         transition: 1s;
     }
-}
-
-
-
-.lastSection button:hover {
-    animation: wobble 5s linear infinite; // <-------------------------------- animation WOBBLE
-    transition: 1.5s;
-    background-color: rgb(42, 42, 51);
 }

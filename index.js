@@ -11,8 +11,6 @@ const header = document.querySelector("header div");
 const escape = document.getElementById("escape");
 
 
-
-
 menuBttn.addEventListener("click", e => {
     toggleMenu();
     header.style.display = "none";
@@ -59,5 +57,5 @@ bttmBttn.addEventListener("mouseout", e => {
 
 bttmBttn.addEventListener("click", e => {
     window.scrollTo({top:0, behavior: "smooth"});
-    arrowOver.style.transform = "translateX(-300px)"
+    arrowOver.style.transform = "translateX(-200px)"
 })
