@@ -2,13 +2,16 @@
 
 //Menu functionality
 function toggleMenu(){
-    menu.classList.toggle('nav--open');
+    menu.classList.toggle("nav--open");
   }
 
 const menuBttn = document.querySelector("header div a");
 const menu = document.querySelector("nav");
 const header = document.querySelector("header div");
 const escape = document.getElementById("escape");
+
+
+
 
 menuBttn.addEventListener("click", e => {
     toggleMenu();
