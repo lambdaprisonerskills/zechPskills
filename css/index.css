@@ -32,6 +32,52 @@
     transform: scale(1, 1);
   }
 }
+@keyframes jiggle {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.05, 0.95);
+  }
+  57% {
+    transform: scale(1, 1);
+  }
+  64% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes jiggleTwo {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1, 0.9);
+  }
+  30% {
+    transform: scale(0.9, 1);
+  }
+  50% {
+    transform: scale(0.95, 0.95);
+  }
+  57% {
+    transform: scale(0.93, 0.93);
+  }
+  64% {
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -320,7 +366,8 @@ header a button:hover {
 }
 footer {
   padding: 2rem;
-  background: #575779;
+  background: #1c1c24;
+  color: white;
 }
 @media (min-width: 800px ) {
   footer {
@@ -402,6 +449,8 @@ button {
 }
 @media (min-width: 800px ) {
   .middleContent {
+    background-image: url("../img/doors.jpeg");
+    background-size: cover;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
@@ -436,12 +485,8 @@ button {
 @media (min-width: 800px ) {
   .bannerTwo {
     position: relative;
-    background-image: url("../img/beach.jpeg");
     background-position: bottom;
     background-size: cover;
-    width: 100%;
-  }
-  .bannerTwo .banner h1 {
     width: 100%;
   }
 }
