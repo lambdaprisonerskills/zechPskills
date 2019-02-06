@@ -244,7 +244,7 @@ img {
   height: auto;
 }
 .container {
-  min-width: 500px;
+  min-width: 300px;
   width: 100%;
   margin: 0 auto;
   border: 1px solid black;
@@ -276,6 +276,9 @@ header div a {
   color: white;
   font-size: 2.4rem;
   text-decoration: none;
+}
+header div a:hover {
+  color: teal;
 }
 nav {
   display: none;
@@ -377,9 +380,44 @@ footer {
   background: #1c1c24;
   color: white;
 }
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer section a {
+  font-size: 4rem;
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
+}
+footer section a:hover {
+  color: teal;
+}
+footer p {
+  border-top: 1px solid white;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
 @media (min-width: 800px ) {
-  footer {
-    padding-left: 20rem;
+  footer section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  footer section a {
+    font-size: 4rem;
+    padding: 4rem;
+    text-decoration: none;
+  }
+  footer section a:hover {
+    color: teal;
+  }
+  footer p {
+    text-align: right;
+    padding-right: 20rem;
   }
 }
 @media (min-width: 800px ) {
@@ -429,7 +467,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20rem 10rem 20rem 20rem;
+    padding: 20rem 20rem 20rem 30rem;
     text-align: center;
   }
   .topInfo .topInfo h1 {
@@ -454,6 +492,8 @@ button {
   flex-direction: column;
   justify-content: center;
   color: white;
+  background-image: url("../img/doors.jpeg");
+  background-size: cover;
 }
 @media (min-width: 800px ) {
   .middleContent {
@@ -471,7 +511,7 @@ button {
 }
 @media (min-width: 800px ) {
   .box {
-    padding: 20rem 0 20rem 4rem;
+    padding: 20rem 0 20rem 12rem;
     color: white;
     border-top: transparent;
   }
@@ -487,7 +527,7 @@ button {
   }
 }
 .box p {
-  width: 60%;
+  width: 90%;
   padding: 1rem;
 }
 @media (min-width: 800px ) {
@@ -608,31 +648,70 @@ button {
   background: #64485C;
 }
 .one:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 1s;
+}
+@media (min-width: 800px ) {
+  .one:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
 }
 .two:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 1s;
+}
+@media (min-width: 800px ) {
+  .two:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
 }
 .three:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 1s;
+}
+@media (min-width: 800px ) {
+  .three:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
 }
 .four:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 1s;
+}
+@media (min-width: 800px ) {
+  .four:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
 }
 .five:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 1s;
 }
+@media (min-width: 800px ) {
+  .five:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
+}
 .six:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   transition: 1s;
+}
+@media (min-width: 800px ) {
+  .six:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
 }
 .lastSection button:hover {
   animation: wobble 5s linear infinite;
   transition: 1.5s;
   background-color: #2a2a33;
+}
+.lastSection span {
+  margin-left: 2rem;
 }

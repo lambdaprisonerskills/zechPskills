@@ -53,7 +53,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20rem 10rem 20rem 20rem;
+        padding: 20rem 20rem 20rem 30rem;
         text-align: center;
 
         .topInfo h1 {
@@ -86,6 +86,8 @@ button {
     flex-direction: column;
     justify-content: center;
     color: white;
+    background-image: url("../img/doors.jpeg");
+    background-size: cover;
 
     @media @desktop {
         background-image: url("../img/doors.jpeg");
@@ -102,7 +104,7 @@ button {
     border-top: .1rem solid black;
 
     @media @desktop {
-        padding: 20rem 0 20rem 4rem;
+        padding: 20rem 0 20rem 12rem;
         color: white;
         border-top: transparent;
     }
@@ -119,7 +121,7 @@ button {
 }
 
 .box p {
-    width: 60%;
+    width: 90%;
     padding: 1rem;
 }
 
@@ -289,43 +291,78 @@ button {
 }
 
 .one:hover {
+    opacity: .6;
+    transition: 1s;
+
+@media @desktop {
     opacity: .8;
     transition: 1s;
+}
 }
 
 
 .two:hover {
-    opacity: .8;
+    opacity: .6;
     transition: 1s;
+
+    @media @desktop {
+        opacity: .8;
+        transition: 1s;
+    }
 }
 
 
 .three:hover {
-    opacity: .8;
+    opacity: .6;
     transition: 1s;
+
+    @media @desktop {
+        opacity: .8;
+        transition: 1s;
+    }
 }
 
 .four:hover {
-    opacity: .8;
+    opacity: .6;
     transition: 1s;
+
+    @media @desktop {
+        opacity: .8;
+        transition: 1s;
+    }
 }
 
 
 
 .five:hover {
-    opacity: .8;
+    opacity: .6;
     transition: 1s;
+
+    @media @desktop {
+        opacity: .8;
+        transition: 1s;
+    }
+    
 }
 
 
 
 .six:hover {
-    opacity: .8;
+    opacity: .6;
     transition: 1s;
+
+    @media @desktop {
+        opacity: .8;
+        transition: 1s;
+    }
 }
 
 .lastSection button:hover {
     animation: wobble 5s linear infinite; // <-------------------------------- animation WOBBLE
     transition: 1.5s;
     background-color: rgb(42, 42, 51);
+}
+
+.lastSection span {
+   margin-left: 2rem;
 }
