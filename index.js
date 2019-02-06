@@ -59,3 +59,20 @@ bttmBttn.addEventListener("click", e => {
     window.scrollTo({top:0, behavior: "smooth"});
     arrowOver.style.transform = "translateX(-200px)"
 })
+
+//------creating a CLASS -------------------------------
+
+class Box {
+    constructor(element){
+        this.element = element;
+        this.clicker = element.querySelector("h2");
+        this.clicker.addEventListener("click", ()=> this.updateBright());
+    }
+
+    updateBright(){
+        this.element.classList.toggle("toggle--bright");
+    }
+}
+
+let boxChanges = document.querySelectorAll('.box');
+boxChanges.forEach(box => new Box(box));

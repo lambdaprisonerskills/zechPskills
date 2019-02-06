@@ -226,6 +226,9 @@ img {
   margin: 0 auto;
   border: 1px solid black;
 }
+.toggle--bright {
+  text-shadow: 0 0 20px white;
+}
 header {
   z-index: 5;
   position: fixed;
@@ -514,22 +517,6 @@ button {
   width: 95%;
   padding: 1rem;
 }
-.four a,
-.five a {
-  color: white;
-}
-.four a:hover,
-.five a:hover {
-  color: blue;
-}
-@media (min-width: 1000px ) {
-  .bannerTwo {
-    position: relative;
-    background-position: bottom;
-    background-size: cover;
-    width: 100%;
-  }
-}
 .lastSection {
   color: white;
   background: #303041;
@@ -562,7 +549,7 @@ button {
 @media (min-width: 1000px ) {
   .lastSection {
     border-top: 5px solid black;
-    padding: 20rem 5rem 15rem 20rem;
+    padding: 10rem 5rem 15rem 20rem;
     color: white;
     opacity: 0.96;
   }
@@ -580,26 +567,6 @@ button {
     transition: 3s;
   }
 }
-@media (min-width: 1000px ) {
-  .one {
-    width: 45%;
-  }
-  .two {
-    width: 55%;
-  }
-  .three {
-    width: 55%;
-  }
-  .four {
-    width: 45%;
-  }
-  .five {
-    width: 45%;
-  }
-  .six {
-    width: 55%;
-  }
-}
 .one {
   background-color: #557A95;
   transition: 1s;
@@ -607,11 +574,17 @@ button {
 @media (min-width: 1000px ) {
   .one {
     border-right: 0.1rem solid black;
+    width: 45%;
   }
 }
 .two {
   background-color: #557A95;
   transition: 1s;
+}
+@media (min-width: 1000px ) {
+  .two {
+    width: 55%;
+  }
 }
 .three {
   transition: 1s;
@@ -622,6 +595,7 @@ button {
     border-top: 0.5rem solid black;
     border-bottom: 0.5rem solid black;
     border-right: 0.1rem solid black;
+    width: 55%;
   }
 }
 .four {
@@ -632,6 +606,7 @@ button {
   .four {
     border-top: 0.5rem solid black;
     border-bottom: 0.5rem solid black;
+    width: 45%;
   }
 }
 .five {
@@ -641,11 +616,25 @@ button {
 @media (min-width: 1000px ) {
   .five {
     border-right: 0.1rem solid black;
+    width: 45%;
   }
 }
 .six {
   transition: 1s;
   background: #64485C;
+}
+@media (min-width: 1000px ) {
+  .six {
+    width: 55%;
+  }
+}
+.four a,
+.five a {
+  color: white;
+}
+.four a:hover,
+.five a:hover {
+  color: blue;
 }
 .one:hover {
   opacity: 0.6;

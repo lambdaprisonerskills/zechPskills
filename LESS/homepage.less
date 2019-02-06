@@ -133,24 +133,7 @@ button {
 
 
 
-.four a, .five a {
-    color: white;
-}
-
-.four a:hover, .five a:hover {
-    color: blue;
-}
-
 // ----------------------------BOTTOM SECTION OF PAGE ------------------------------------------------
-
-@media @desktop {
-    .bannerTwo {
-        position: relative;
-        background-position: bottom;
-        background-size:cover;
-        width: 100%;
-}
-}
 
 
 .lastSection {
@@ -189,7 +172,7 @@ button {
 
     @media @desktop {
         border-top: 5px solid black;
-        padding: 20rem 5rem 15rem 20rem;
+        padding: 10rem 5rem 15rem 20rem;
         color: white;
         opacity: .96;
 
@@ -214,97 +197,63 @@ button {
 }
 
 
-// Desktop BOX LAYOUT ---------------------------------
-//----------------------------------------------------
 
-@media @desktop {
-    .one {
-        width: 45%;
-    }
-
-    .two {
-        width: 55%;
-    }
-
-    .three {
-        width: 55%;
-    }
-
-    .four {
-        width: 45%;
-    }
-
-    .five {
-        width: 45%;
-    }
-
-    .six {
-        width: 55%;
-    }
-}
-
-
-
-
-
-
-//--------------------BOX COLORS AND BORDERS-------------------------------
+//--------------------BOX LAYOUT, COLORS AND BORDERS-------------------------------
 //---------------------------------------------------------------
-
-// .box:hover {
-//     animation: jiggle 3s linear;
-// }
 
 
 .one {
-    // background-color: #ec8d81;
     background-color: #557A95;
     transition: 1s;
 
-    @media @desktop {
+        @media @desktop {
         border-right: .1rem solid black;
+        width: 45%;
     }
 }
 
+
 .two {
-    // background-color: #3d2813;
     background-color: #557A95;
     transition: 1s;
+   
+         @media @desktop {
+         width: 55%;
+    }
 }
 
 
 .three {
-    // background-color: #6fc3df;
     transition: 1s;
-    // background: rgb(87, 87, 121);
     background: #5D5C61;
 
-    @media @desktop {
+        @media @desktop {
         border-top: .5rem solid black;
         border-bottom: .5rem solid black;
         border-right: .1rem solid black;
+        width: 55%;
     }
 
 }
 
 .four {
-    // background-color: #8d82c4;
     transition: 1s;
     background: #5D5C61;
 
-    @media @desktop {
+        @media @desktop {
         border-top: .5rem solid black;
         border-bottom: .5rem solid black;
+        width: 45%;
     }
 }
 
 .five {
     transition: 1s;
-    // background-color: #8ea9e8;
     background: #64485C;
 
-    @media @desktop {
+        @media @desktop {
         border-right: .1rem solid black;
+        width: 45%;
     }
 
 }
@@ -312,9 +261,23 @@ button {
 .six {
     transition: 1s;
     background: #64485C;
-
-    // background-color: #87c5a4;
+    
+        @media @desktop {
+        width: 55%;
+        }
 }
+
+// QUOTE ARTICLE LINK... DEFAULT CHANGES
+
+.four a, .five a {
+    color: white;
+}
+
+.four a:hover, .five a:hover {
+    color: blue;
+}
+
+//---------Box Hover Effects start here--------------------
 
 .one:hover {
     opacity: .6;
@@ -370,8 +333,6 @@ button {
     }
     
 }
-
-
 
 .six:hover {
     opacity: .6;
