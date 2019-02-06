@@ -57,7 +57,12 @@ bttmBttn.addEventListener("mouseout", e => {
 
 bttmBttn.addEventListener("click", e => {
     window.scrollTo({top:0, behavior: "smooth"});
-    arrowOver.style.transform = "translateX(-200px)"
+
+    if (window.innerWidth <= 999 ){
+    arrowOver.style.transform = "translateX(-160px)"
+    } else {
+        arrowOver.style.transform = "translateX(-200px)"
+    }
 })
 
 //------creating a CLASS -------------------------------

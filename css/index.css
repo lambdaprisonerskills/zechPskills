@@ -393,7 +393,7 @@ footer p {
     font-size: 4rem;
     padding: 4rem;
     text-decoration: none;
-    text-shadow: purple 0px 0px 7px;
+    text-shadow: #fd00fd 0px 0px 3px;
   }
   footer section a:hover {
     color: teal;
@@ -574,7 +574,7 @@ button {
 @media (min-width: 1000px ) {
   .one {
     border-right: 0.1rem solid black;
-    width: 45%;
+    width: 48%;
   }
 }
 .two {
@@ -583,7 +583,7 @@ button {
 }
 @media (min-width: 1000px ) {
   .two {
-    width: 55%;
+    width: 52%;
   }
 }
 .three {
@@ -595,7 +595,7 @@ button {
     border-top: 0.5rem solid black;
     border-bottom: 0.5rem solid black;
     border-right: 0.1rem solid black;
-    width: 55%;
+    width: 52%;
   }
 }
 .four {
@@ -606,7 +606,7 @@ button {
   .four {
     border-top: 0.5rem solid black;
     border-bottom: 0.5rem solid black;
-    width: 45%;
+    width: 48%;
   }
 }
 .five {
@@ -616,7 +616,7 @@ button {
 @media (min-width: 1000px ) {
   .five {
     border-right: 0.1rem solid black;
-    width: 45%;
+    width: 48%;
   }
 }
 .six {
@@ -625,7 +625,7 @@ button {
 }
 @media (min-width: 1000px ) {
   .six {
-    width: 55%;
+    width: 52%;
   }
 }
 .four a,
