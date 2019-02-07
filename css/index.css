@@ -32,29 +32,6 @@
     transform: scale(1, 1);
   }
 }
-@keyframes jiggle {
-  0% {
-    transform: scale(1, 1);
-  }
-  10% {
-    transform: scale(1.1, 0.9);
-  }
-  30% {
-    transform: scale(0.9, 1.1);
-  }
-  50% {
-    transform: scale(1.05, 0.95);
-  }
-  57% {
-    transform: scale(1, 1);
-  }
-  64% {
-    transform: scale(1, 1);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -443,7 +420,7 @@ button {
   background: #575779;
   border: 0.2rem solid white;
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: 500ms ease;
 }
 @media (min-width: 1000px ) {
@@ -537,6 +514,7 @@ button {
   padding: 1rem;
 }
 .lastSection button {
+  font-size: 2rem;
   width: 20rem;
   height: 5rem;
   background: #575779;

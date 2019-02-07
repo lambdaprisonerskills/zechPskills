@@ -26,6 +26,8 @@ const span = document.querySelector("span");
 const arrowOver = document.querySelector("span .fa");
 const topBttn = document.querySelector(".topInfo button");
 
+
+//These next two eventListeners cause the top button arrow to move.
 topBttn.addEventListener("mouseover", e => {
     arrowOver.style.color = "transparent";
     arrowOver.style.transform = "translateX(167px)"
@@ -38,11 +40,11 @@ topBttn.addEventListener("mouseout", e => {
     arrowOver.style.transition ="1.5s"
 })
 
-
-
+//-------------------------------------------------------------
 const bttmBttn = document.querySelector(".lastSection button");
 const arrowUp = document.querySelector(".lastSection .fa");
 
+//These next two eventListeners cause the bottom button arrow to move up.
 bttmBttn.addEventListener("mouseover", e => {
     arrowUp.style.transform = "translateY(-500px)"
     arrowUp.style.transition = "1.5s";
@@ -54,24 +56,25 @@ bttmBttn.addEventListener("mouseout", e => {
     arrowUp.style.transition = "1.5s";
     arrowUp.style.color ="white";
 });
-
+//-----------------------------------------------------------------
+//This conditional if statement makes it so that the top arrow doesnt go off page in mobile view.
 bttmBttn.addEventListener("click", e => {
 
     if (window.innerWidth <= 999 ){
-    arrowOver.style.transform = "translateX(-160px)";
+    arrowOver.style.transform = "translateX(-17rem)";
     window.scrollTo({top:0, behavior: "smooth"});
     } else {
-        arrowOver.style.transform = "translateX(-200px)";
+        arrowOver.style.transform = "translateX(-20rem)";
         window.scrollTo({top:0, behavior: "smooth"});
     }
 })
 
-//------creating a CLASS -------------------------------
+//This Class causes the Text in the center content area to turn bright if a paragraph is clicked
 
 class BoxEffect {
     constructor(element){
         this.element = element;
-        this.clicker = element.querySelector("h2");
+        this.clicker = element.querySelector("p");
         this.clicker.addEventListener("click", ()=> this.updateBright());
     }
 
@@ -83,8 +86,7 @@ class BoxEffect {
 let boxChanges = document.querySelectorAll('.box');
 boxChanges.forEach(box => new BoxEffect(box));
 
-//--------- Created an object ---------------------------
-
+//This object was used to update text on the bottom section using querySelectors
 
 let lastSectionUpdate = {
     "sectionTitle": {
@@ -104,21 +106,30 @@ let lastSpans = document.querySelectorAll(".lastSection span");
 const lastH2 = document.querySelector(".lastSection h2");
 const lastBttn = document.querySelector(".lastSection button");
 
-lastH2.addEventListener("click", e => {
+lastH2.addEventListener("dblclick", e => {
     lastH2.textContent = lastSectionUpdate["sectionTitle"]["title"];
     
-    lastParagraph.innerHTML = lastSectionUpdate["sectionTitle"]["paragraph"] +`<br><br>`+ lastSectionUpdate["spans"]["span-3"] +`<br><br>`+ lastSectionUpdate["spans"]["span-2"] +`<br><br>`+ lastSectionUpdate["spans"]["span-1"];
+    lastParagraph.innerHTML = lastSectionUpdate["sectionTitle"]["paragraph"] +`<br><br>`+ '<>'+lastSectionUpdate["spans"]["span-3"] +`<br><br>`+ '<>'+lastSectionUpdate["spans"]["span-2"] +`<br><br>`+ '<>'+lastSectionUpdate["spans"]["span-1"] +`<br><br>`;
 
-    lastH2.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px";
-    lastParagraph.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px";
+    lastH2.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px";
+    lastParagraph.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px";
     lastBttn.textContent = "up, UP and AWAY!"
-    lastBttn.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px";
-    lastBttn.style.boxShadow = "rgb(253, 0, 253) 0px 0px 15px";
+    lastBttn.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px";
+    lastBttn.style.boxShadow = "rgb(90, 0, 253) 0px 0px 5px";
 
-    //USED MAP
-    lastSpans = Array.from(lastSpans).map(array => array.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px");
+    // lastSpans.forEach((span) => {span.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px" }
+    //);
 })
 
+lastH2.addEventListener("mouseover", e => {
+    lastSpans.forEach(arr => arr.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px");
+});
 
 
+lastH2.addEventListener("mouseout", e => {
+    lastSpans = Array.from(lastSpans).map(arr => arr.style.textDecoration = "underline");
+});
+
+
+// lastSpans = Array.from(lastSpans).map(arr => arr.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px");
 
