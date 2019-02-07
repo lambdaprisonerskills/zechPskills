@@ -87,6 +87,8 @@ let boxChanges = document.querySelectorAll('.box');
 boxChanges.forEach(box => new BoxEffect(box));
 
 //This object was used to update text on the bottom section using querySelectors
+//-------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
 let lastSectionUpdate = {
     "sectionTitle": {
@@ -111,25 +113,18 @@ lastH2.addEventListener("dblclick", e => {
     
     lastParagraph.innerHTML = lastSectionUpdate["sectionTitle"]["paragraph"] +`<br><br>`+ '<>'+lastSectionUpdate["spans"]["span-3"] +`<br><br>`+ '<>'+lastSectionUpdate["spans"]["span-2"] +`<br><br>`+ '<>'+lastSectionUpdate["spans"]["span-1"] +`<br><br>`;
 
-    lastH2.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px";
-    lastParagraph.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px";
+    lastH2.style.textShadow = "rgb(255, 250, 250) 0px 0px 10px";
+    lastParagraph.style.textShadow = "rgb(255, 250, 250) 0px 0px 10px";
     lastBttn.textContent = "up, UP and AWAY!"
-    lastBttn.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px";
-    lastBttn.style.boxShadow = "rgb(90, 0, 253) 0px 0px 5px";
-
-    // lastSpans.forEach((span) => {span.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px" }
-    //);
+    lastBttn.style.textShadow = "rgb(255, 250, 250) 0px 0px 10px";
+    lastBttn.style.boxShadow = "rgb(255, 250, 250) 0px 0px 10px";
 })
 
-lastH2.addEventListener("mouseover", e => {
-    lastSpans.forEach(arr => arr.style.textShadow = "rgb(90, 0, 253) 0px 0px 5px");
+lastH2.addEventListener("click", e => {
+    lastSpans.forEach(arr => arr.style.textShadow = "rgb(255, 250, 250) 0px 0px 10px");  
 });
 
-
-lastH2.addEventListener("mouseout", e => {
+//MAP----------------------------------------------------------------------------
+lastH2.addEventListener("click", e => {
     lastSpans = Array.from(lastSpans).map(arr => arr.style.textDecoration = "underline");
-});
-
-
-// lastSpans = Array.from(lastSpans).map(arr => arr.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px");
-
+    });
