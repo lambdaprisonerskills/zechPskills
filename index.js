@@ -68,7 +68,7 @@ bttmBttn.addEventListener("click", e => {
 
 //------creating a CLASS -------------------------------
 
-class Box {
+class BoxEffect {
     constructor(element){
         this.element = element;
         this.clicker = element.querySelector("h2");
@@ -81,4 +81,4 @@ class Box {
 }
 
 let boxChanges = document.querySelectorAll('.box');
-boxChanges.forEach(box => new Box(box));
+boxChanges.forEach(box => new BoxEffect(box));

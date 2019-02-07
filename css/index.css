@@ -273,6 +273,7 @@ nav {
 @media (min-width: 1000px ) {
   nav {
     width: 100%;
+    padding-top: 10rem;
   }
 }
 nav div {
