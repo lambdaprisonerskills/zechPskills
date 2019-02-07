@@ -82,3 +82,43 @@ class BoxEffect {
 
 let boxChanges = document.querySelectorAll('.box');
 boxChanges.forEach(box => new BoxEffect(box));
+
+//--------- Created an object ---------------------------
+
+
+let lastSectionUpdate = {
+    "sectionTitle": {
+        "title": "Ready To Sign Up?",
+        "paragraph": "That's a rhetorical question. Just sign up already. Follow the steps below..."
+    },
+    
+    "spans": {
+       "span-1": "Create an account at the top of the page. The button below will take you there!!!",
+       "span-2": "Find a prison of your choice!",
+       "span-3": "Search through the inmate profiles until you find a match."
+}
+}      
+
+const lastParagraph = document.querySelector(".lastSection p");
+let lastSpans = document.querySelectorAll(".lastSection span");
+const lastH2 = document.querySelector(".lastSection h2");
+const lastBttn = document.querySelector(".lastSection button");
+
+lastH2.addEventListener("click", e => {
+    lastH2.textContent = lastSectionUpdate["sectionTitle"]["title"];
+    
+    lastParagraph.innerHTML = lastSectionUpdate["sectionTitle"]["paragraph"] +`<br><br>`+ lastSectionUpdate["spans"]["span-3"] +`<br><br>`+ lastSectionUpdate["spans"]["span-2"] +`<br><br>`+ lastSectionUpdate["spans"]["span-1"];
+
+    lastH2.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px";
+    lastParagraph.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px";
+    lastBttn.textContent = "up, UP and AWAY!"
+    lastBttn.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px";
+    lastBttn.style.boxShadow = "rgb(253, 0, 253) 0px 0px 15px";
+
+    //USED MAP
+    lastSpans = Array.from(lastSpans).map(array => array.style.textShadow = "rgb(253, 0, 253) 0px 0px 5px");
+})
+
+
+
+

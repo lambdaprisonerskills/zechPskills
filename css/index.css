@@ -256,7 +256,7 @@ header div a {
   color: white;
   font-size: 2.4rem;
   text-decoration: none;
-  text-shadow: purple 0px 0px 7px !important;
+  text-shadow: purple 0px 0px 0.7rem !important;
 }
 header div a:hover {
   color: teal;
@@ -281,8 +281,13 @@ nav div {
 }
 nav a {
   color: white;
-  padding: 5rem 0;
+  padding: 3rem 0;
   text-decoration: none;
+}
+@media (min-width: 1000px ) {
+  nav a {
+    padding: 5rem 0;
+  }
 }
 nav a:hover {
   text-decoration: underline;
