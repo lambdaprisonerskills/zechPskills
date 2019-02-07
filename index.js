@@ -56,12 +56,13 @@ bttmBttn.addEventListener("mouseout", e => {
 });
 
 bttmBttn.addEventListener("click", e => {
-    window.scrollTo({top:0, behavior: "smooth"});
 
     if (window.innerWidth <= 999 ){
-    arrowOver.style.transform = "translateX(-160px)"
+    arrowOver.style.transform = "translateX(-160px)";
+    window.scrollTo({top:0, behavior: "smooth"});
     } else {
-        arrowOver.style.transform = "translateX(-200px)"
+        arrowOver.style.transform = "translateX(-200px)";
+        window.scrollTo({top:0, behavior: "smooth"});
     }
 })
 
