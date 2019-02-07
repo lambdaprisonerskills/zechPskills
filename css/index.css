@@ -198,23 +198,23 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merienda', cursive;
 }
 h1 {
   font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 p {
   line-height: 1.5;
   font-size: 1.8rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 img {
   max-width: 100%;
@@ -227,7 +227,7 @@ img {
   border: 1px solid black;
 }
 .toggle--bright {
-  text-shadow: 0 0 20px white;
+  text-shadow: 0 0 2rem white;
 }
 header {
   z-index: 5;
@@ -377,7 +377,7 @@ footer section a:hover {
   color: teal;
 }
 footer p {
-  border-top: 1px solid white;
+  border-top: 0.1rem solid white;
   padding-top: 1rem;
   margin-top: 1rem;
   text-align: center;
@@ -425,7 +425,7 @@ button {
   background: #575779;
 }
 .topInfo h1 {
-  border-bottom: 2px solid white;
+  border-bottom: 0.2rem solid white;
   width: 95%;
   padding: 5rem 2rem 2rem 2rem;
 }
@@ -501,7 +501,7 @@ button {
   }
 }
 .box:hover {
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 2rem black;
 }
 .box h2 {
   border-bottom: 0.2rem solid white;
